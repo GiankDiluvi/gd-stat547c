@@ -1,0 +1,21 @@
+% File adapted from ETHbrief.cls
+% Used by Peter Orbanz
+% Subsequently adapted by John Cunningham for STAT G8325 (Columbia).
+% Subsequently adapted by Ben Bloem-Reddy for STAT 547C (UBC).
+
+% --- Declaration of options ---
+\DeclareOption{english}{%
+  \PassOptionsToPackage{english}{babel}
+  \PersonName{Benjamin Bloem-Reddy}
+  \PersonAddress{benbr@stat.ubc.ca}
+  \CoursePage{https://ben-br.github.io/stat-547c-fall-2019/}
+  \CourseTitle{Topics in Probability (STAT 547C)}
+  \Semester{Fall 2019}
+}
+
+% --- Execution of options ---
+\ExecuteOptions{english}   
+\ProcessOptions
+
+% --- Package loading --- 
+\RequirePackage{babel}

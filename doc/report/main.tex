@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for STAT 547C final project
+% Author: Ben Bloem-Reddy <benbr@stat.ubc.ca>
+% Date: Oct. 18, 2019
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Note: You will get an empty bibliography warning when compiling until you include a citation.
+
+\documentclass[10pt]{article}
+\input{header}
+\input{defs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% your title/author/date information go here
+\title{\LaTeX\ Template for STAT 547C Final Project} % replace with your title
+\author{Benjamin Bloem-Reddy} % replace with your name
+\date{\today} % replace with your submission date
+
+\bibliography{../../ref/STAT_547C.bib} % add the title of your bibliography file
+
+% start of document
+\begin{document}
+
+\maketitle
+
+% background section
+\include{sections/background}
+
+% add your main body sections here
+
+% open questions section
+\include{sections/open-questions}
+
+%%%% appendix
+\clearpage
+\appendix
+
+% exercises and problems
+\include{sections/appx-exercises}
+
+% any other appendix sections
+
+
+% bibliography
+\printbibliography
+
+\end{document}

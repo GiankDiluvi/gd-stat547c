@@ -1,0 +1,4 @@
+# date
+## paper
+
+thoughts...

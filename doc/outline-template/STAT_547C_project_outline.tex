@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for STAT 547C Final Project Outline
+% Author: Ben Bloem-Reddy <benbr@stat.ubc.ca>
+% Date: Oct. 17, 2019
+% Acknowledgments: ETH, Peter Orbanz, John Cunningham
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{STAT_547C}
+\usepackage{STAT_547C}
+% NOTE: change the name and email address to your name in STAT_547C.sty
+
+\usepackage{booktabs}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+
+\usepackage[sorting=none,backend=biber,bibstyle=alphabetic,citestyle=alphabetic,giveninits=true,natbib=true]{biblatex}
+\bibliography{../../ref/STAT_547C.bib} % add the title and location of your bibliography file
+
+\begin{document}
+
+% NOTE: You will replace the title below with your actual Title.
+\makeGenericHeader{Conditional Independence in Computational Statistics \\and Machine Learning}{Project Outline}
+\vspace{-2cm}
+
+
+%%%%%%%%%%%%%%%%%%%
+\section{Title}
+
+The working title of my project is \emph{Conditional Independence in Computational Statistics and Machine Learning}.  
+
+%%%%%%%%%%%%%%%%%%%
+\section{Background}
+
+Conditional independence is a key concept in probability, especially in statistical applications. The classic paper by \citet{Dawid:1979:CondIndStatTheory} presents core ideas of statistics in terms of conditional independence. Those ideas are particularly relevant to statistical theory: estimation and hypothesis testing, identifiability, and predictive sufficiency. In modern data analysis, the importance of conditional independence seems to have grown, especially in the context of computationally intensive methods in statistics and machine learning. I am interested in a literature review of the role played by conditional independence in modern data analysis, particularly on computationally intensive methods, and in initial steps towards formalizing the relationship between computational complexity, notions of statistical efficiency, and conditional independence.
+
+%%%%%%%%%%%%%%%%%%%
+\section{Technical aspects}
+
+The project will draw on technical aspects of the following areas: conditioning and disintegration, stochastic optimization, graphical models, computational complexity theory.
+
+
+%%%%%%%%%%%%%%%%%%%
+\section{Literature}
+
+The key references for this project are:
+
+\begin{itemize}
+  \item \cite{Dawid:1980:CondIndStatOp}, as mentioned above.
+  \item \cite{Dawid:1979:CondIndStatTheory} is a technical version of \cite{Dawid:1980:CondIndStatOp}, with additional material.
+  \item \cite[][Ch.~6]{Kallenberg:2002} is a key technical reference for conditioning.
+  \item \cite[][Ch.~8]{Bishop:2006} is a gentle introduction to graphical models; \cite{Lauritzen:1996:GraphMod,Koller:Friedman:2009:PGM} are complete references.
+  \item Based on a preliminary literature search, some references for methods that rely on conditional independence: stochastic optimization \cite{Bottou:2010} and stochastic variational inference \cite{Hoffman:etal:2013:SVI}; efficient (lifted) inference in statistical relational models \cite{Niepert:Domingos,Niepert:vdBroeck:2014:TractExch}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%
+\section{Plan}
+
+I will carry out this project with the following sequence of steps: 
+\begin{enumerate}
+  \item I will map ideas presented in a statistical theoretical framework in the papers of \citet{Dawid:1979:CondIndStatTheory,Dawid:1980:CondIndStatOp} to one that takes into account computational requirements of  inference algorithms, with a focus on sufficiency and adequacy.
+  \item I will review methods from computational statistics and machine learning that rely on conditional independence. 
+  \item I will focus on one of these methods for an in-depth study of the effects of conditional independence on computational complexity.
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%
+\section{Why I'm interested in this topic}
+
+I am interested in doing research that applies probability to problems in machine learning, and this seems like a great way to get started. 
+
+
+%%%%%%%%%%%%%%%%%%%
+\printbibliography
+
+
+\end{document}
+
