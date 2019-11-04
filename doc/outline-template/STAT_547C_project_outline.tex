@@ -18,24 +18,24 @@
 \begin{document}
 
 % NOTE: You will replace the title below with your actual Title.
-\makeGenericHeader{Exchangeability in Gaussian Process Regression and\\ Bayesian Optimization}{Project Outline}
+\makeGenericHeader{Exchangeability in Gaussian Process Regression}{Project Outline}
 \vspace{-2cm}
 
 
 %%%%%%%%%%%%%%%%%%%
 \section{Title}
 
-The working title of my project is \emph{Exchangeability in Gaussian Process Regression and Bayesian Optimization}.  
+The working title of my project is \emph{Exchangeability in Gaussian Process Regression}.  
 
 %%%%%%%%%%%%%%%%%%%
 \section{Background}
 
 
-Exchangeability is a fundamental---although oftentimes overlooked---concept in probability which has elegant theoretical underlying results. Furthermore, the number of potential uses of exchangeability in contemporary statistics seems to be growing. For instance, \cite{Kingman:1978, Aldous:2010, Orbanz:Roy:2015} discuss applications of exchangeability on a plethora of subjects, from population genetics to general random structures. \\
+Exchangeability is a fundamental---although oftentimes overlooked---concept in probability which has elegant theoretical implications, namely, de Finetti's integral representation theorems \cite{deFinetti:1930:RepTheorem}. Furthermore, the number of potential uses of exchangeability in contemporary statistics seems to be growing. For instance, \cite{Kingman:1978, Aldous:2010, Orbanz:Roy:2015} discuss applications of exchangeability in population genetics and general random structures. \\
 
-Another area (?) in Bayesian computational statistics that has enjoyed a surge in popularity is the use of Gaussian Process regression for modelling complex phenomena. Bayesian Optimization is one application of this technique which has grown substantially in the recent years. \\
+Another area in Bayesian computational statistics that has enjoyed a surge in popularity is the use of Gaussian Process (GP) regression for modelling complex phenomena. For example, \cite{Frazier:2018:BayesOptTutorial} surveys applications of GPs in Bayesian Optimization, \cite{PokharelDeardon:2016:GPInfectDisease} in disease spreading modeling, and \cite{WoodsEtAl:2017:ACEAlgorithm} in Bayesian design of experiments. \\
 
-In \cite{McCullagh:2005:ExchAndReg}, McCullah discusses exchangeability in the context of regression models. I am interested in giving a more detailed treatment of these ideas in the case of Gaussian Process regression, specifically studying it in a Bayesian framework.
+However, these two concepts have so far been treated separately. In this line of thought, in \cite{McCullagh:2005:ExchAndReg} McCullah discusses exchangeability in the context of regression models. I am interested in giving a more detailed treatment of these ideas in the case of Gaussian Process regression. Specifically, I want to study if a result analogous to de Finetti's can be conjectured in this setting, as well as the potential practical implications of studying GP regression from an exchangeability point of view.
 
 
 
@@ -51,9 +51,9 @@ The project will draw on technical aspects of the following areas: independence,
 The key references for this project are:
 
 \begin{itemize}
-  \item \citet{McCullagh:2005:ExchAndReg}, as mentioned above.
+  \item \citet{McCullagh:2005:ExchAndReg} discusses how to generalize the concept of exchangeability to regression settings.
   \item \cite{Kingman:1978, Bernardo:1996:Exch} give a probabilistic treatment of exchangeability; \cite{deFinetti:1930:RepTheorem} is the original paper in which de Finetti proves his integral representation theorem.
-  \item 
+  \item \cite{RasmussenWilliams:2006} is the go-to reference for Gaussian Process regression.
 \end{itemize}
 
 
@@ -62,9 +62,11 @@ The key references for this project are:
 
 I will carry out this project with the following sequence of steps: 
 \begin{enumerate}
-  \item I will map ideas presented in a statistical theoretical framework in the papers of \citet{Dawid:1979:CondIndStatTheory,Dawid:1980:CondIndStatOp} to one that takes into account computational requirements of  inference algorithms, with a focus on sufficiency and adequacy.
-  \item I will review methods from computational statistics and machine learning that rely on conditional independence. 
-  \item I will focus on one of these methods for an in-depth study of the effects of conditional independence on computational complexity.
+  \item Study the concept of exchangeability, following \cite{Kingman:1978} and \cite{Bernardo:1996:Exch}, and (give a sketch of the derivation of) the de Finetti representation theorem.
+  \item Review Gaussian Process regression and survey some of its applications (see items in Background section).
+  \item Discuss the concept of exchangeability in a regression setting as per \cite{McCullagh:2005:ExchAndReg} and do an in-depth study of its implications for Gaussian Process regression. 
+  \item If possible, conjecture a representation theorem in this setting, or at least study how such a theorem would look like.
+  \item Determine if this approach has any practical implications, and if so which ones.
 \end{enumerate}
 
 
