@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.0 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,5 +16,625 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Aldous:2010}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=9662995a683a5829e6d1672b29c92203}{%
+           family={Aldous},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=dd7fb13993de77f9ff510db18f25f29c}{%
+           family={Bingham},
+           familyi={B\bibinitperiod},
+           given={N.\bibnamedelimi H.},
+           giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=6cee5f81e6a56c1efe3b16f1f5d266e0}{%
+           family={Goldie},
+           familyi={G\bibinitperiod},
+           given={C.\bibnamedelimi M.Editors},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9662995a683a5829e6d1672b29c92203}
+      \strng{fullhash}{9662995a683a5829e6d1672b29c92203}
+      \strng{bibnamehash}{9662995a683a5829e6d1672b29c92203}
+      \strng{authorbibnamehash}{9662995a683a5829e6d1672b29c92203}
+      \strng{authornamehash}{9662995a683a5829e6d1672b29c92203}
+      \strng{authorfullhash}{9662995a683a5829e6d1672b29c92203}
+      \strng{editorbibnamehash}{44920a0b544acce65d42a20d917d745b}
+      \strng{editornamehash}{44920a0b544acce65d42a20d917d745b}
+      \strng{editorfullhash}{44920a0b544acce65d42a20d917d745b}
+      \field{labelalpha}{Ald10}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Probability and Mathematical Genetics: Papers in Honour of Sir John Kingman}
+      \field{series}{London Mathematical Society Lecture Note Series}
+      \field{title}{More uses of exchangeability: representations of complex random structures}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{35\bibrangedash 63}
+      \range{pages}{29}
+    \endentry
+    \entry{Bernardo:1996:Exch}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b3fec93cef51e24aa936f7f49589e779}{%
+           family={Bernardo},
+           familyi={B\bibinitperiod},
+           given={Jos{é}\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3fec93cef51e24aa936f7f49589e779}
+      \strng{fullhash}{b3fec93cef51e24aa936f7f49589e779}
+      \strng{bibnamehash}{b3fec93cef51e24aa936f7f49589e779}
+      \strng{authorbibnamehash}{b3fec93cef51e24aa936f7f49589e779}
+      \strng{authornamehash}{b3fec93cef51e24aa936f7f49589e779}
+      \strng{authorfullhash}{b3fec93cef51e24aa936f7f49589e779}
+      \field{labelalpha}{Ber96}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Far East Journal of Mathematical Sciences}
+      \field{title}{The concept of exchangeability and its applications}
+      \field{volume}{4}
+      \field{year}{1996}
+      \true{nocite}
+      \field{pages}{111\bibrangedash 122}
+      \range{pages}{12}
+    \endentry
+    \entry{BernardoSmith:1994:BayesianTheory}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1fb8b6b0003f98822d80f1b487c6601c}{%
+           family={Bernardo},
+           familyi={B\bibinitperiod},
+           given={Jose\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=bcc56a1d612148dee0d3673a90973427}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Adrian\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{6b78c4fc680b168c36894c1f7aff0cd2}
+      \strng{fullhash}{6b78c4fc680b168c36894c1f7aff0cd2}
+      \strng{bibnamehash}{6b78c4fc680b168c36894c1f7aff0cd2}
+      \strng{authorbibnamehash}{6b78c4fc680b168c36894c1f7aff0cd2}
+      \strng{authornamehash}{6b78c4fc680b168c36894c1f7aff0cd2}
+      \strng{authorfullhash}{6b78c4fc680b168c36894c1f7aff0cd2}
+      \field{labelalpha}{BS94}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Bayesian Theory}
+      \field{year}{1994}
+    \endentry
+    \entry{CamerlenghiEtAl:2019:partial_exchang_hierarchical}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c4dcf6217c464077e9c3bce1c252aea8}{%
+           family={Camerlenghi},
+           familyi={C\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5a35da777c0f7bb0f78fc3d18e773ed0}{%
+           family={Lijoi},
+           familyi={L\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6ebce25caeca70792e85946e1df6b0e5}{%
+           family={Orbanz},
+           familyi={O\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=697257828981d515255ba46d6ad71cf6}{%
+           family={Prünster},
+           familyi={P\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{91d2ebf3fe9ebbd18b5eb12a7aedecee}
+      \strng{fullhash}{5378142ea4b575eac98f6691ba1b5fd3}
+      \strng{bibnamehash}{91d2ebf3fe9ebbd18b5eb12a7aedecee}
+      \strng{authorbibnamehash}{91d2ebf3fe9ebbd18b5eb12a7aedecee}
+      \strng{authornamehash}{91d2ebf3fe9ebbd18b5eb12a7aedecee}
+      \strng{authorfullhash}{5378142ea4b575eac98f6691ba1b5fd3}
+      \field{labelalpha}{Cam+19}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{1}
+      \field{title}{{Distribution Theory for Hierarchical Processes}}
+      \field{volume}{47}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{67\bibrangedash 92}
+      \range{pages}{26}
+    \endentry
+    \entry{CampbellEtAl:2019:LocalExch}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c9d16e227bb1222799637e149e1e4c06}{%
+           family={{Campbell}},
+           familyi={C\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2ba2b83ca1f9e122414273e3c0dc5753}{%
+           family={{Syed}},
+           familyi={S\bibinitperiod},
+           given={Saifuddin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=926614a15623b2e851a7aa4f2eb716f6}{%
+           family={{Yang}},
+           familyi={Y\bibinitperiod},
+           given={Chiao-Yu},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=8a36116840c7ee55901618c95fd08a58}{%
+           family={{Jordan}},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=4158a9146a2bcd94b39b138a41514f81}{%
+           family={{Broderick}},
+           familyi={B\bibinitperiod},
+           given={Tamara},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{a771ad56c6ce7a692bb53d511d454d6c}
+      \strng{fullhash}{367c7621d690d759c6810de99b894e7d}
+      \strng{bibnamehash}{a771ad56c6ce7a692bb53d511d454d6c}
+      \strng{authorbibnamehash}{a771ad56c6ce7a692bb53d511d454d6c}
+      \strng{authornamehash}{a771ad56c6ce7a692bb53d511d454d6c}
+      \strng{authorfullhash}{367c7621d690d759c6810de99b894e7d}
+      \field{labelalpha}{Cam+19}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1906.09507}
+      \field{eprintclass}{math.ST}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{title}{{Local Exchangeability}}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{arXiv:1906.09507}
+      \range{pages}{-1}
+      \verb{eprint}
+      \verb 1906.09507
+      \endverb
+      \keyw{Mathematics - Statistics Theory,Mathematics - Probability}
+    \endentry
+    \entry{deFinetti:1930:RepTheorem}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b29f2bfeb0be6b730a5d23e119103854}{%
+           family={{de Finetti}},
+           familyi={d\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{fullhash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{bibnamehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{authorbibnamehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{authornamehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{authorfullhash}{b29f2bfeb0be6b730a5d23e119103854}
+      \field{extraname}{1}
+      \field{labelalpha}{de 30}
+      \field{sortinit}{d}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{R. Academia Nazionale dei Lince}
+      \field{number}{1}
+      \field{title}{Funzione caratteristica di un fenomeno aleatorio}
+      \field{volume}{4}
+      \field{year}{1930}
+      \field{pages}{86\bibrangedash 133}
+      \range{pages}{48}
+    \endentry
+    \entry{deFinetti:1938:partial_exch}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b29f2bfeb0be6b730a5d23e119103854}{%
+           family={{de Finetti}},
+           familyi={d\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{fullhash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{bibnamehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{authorbibnamehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{authornamehash}{b29f2bfeb0be6b730a5d23e119103854}
+      \strng{authorfullhash}{b29f2bfeb0be6b730a5d23e119103854}
+      \field{extraname}{2}
+      \field{labelalpha}{de 38}
+      \field{sortinit}{d}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Actualites Scientifiques et Industrielles}
+      \field{note}{In French; translated as ``On the condition of partial exchangeability,'' P. Benacerraf and R. Jeffrey (eds) in \textit{Studies in Inductive Logic and Probability II}, 193-205, Berkeley, University of California Press, 1980.}
+      \field{number}{739}
+      \field{title}{{Sur la condition d'equivalence partielle}}
+      \field{year}{1938}
+    \endentry
+    \entry{Diaconis:1988:PartialExchang}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}{%
+           family={Diaconis},
+           familyi={D\bibinitperiod},
+           given={Persi},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}
+      \strng{fullhash}{f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}
+      \strng{bibnamehash}{f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}
+      \strng{authorbibnamehash}{f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}
+      \strng{authornamehash}{f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}
+      \strng{authorfullhash}{f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}
+      \field{labelalpha}{Dia88}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bayesian Statistics}
+      \field{number}{3}
+      \field{title}{{Recent Progress on de Finetti's Notions of Exchangeability}}
+      \field{year}{1988}
+      \field{pages}{111\bibrangedash 125}
+      \range{pages}{15}
+    \endentry
+    \entry{DiaconisFreedman:1978:Generalizations}{report}{}
+      \name{author}{2}{}{%
+        {{hash=f5a7dd4f4a0c79d2eaaf29d6dda0f4b3}{%
+           family={Diaconis},
+           familyi={D\bibinitperiod},
+           given={Persi},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7396ccf082b609137d9256e7354f6228}{%
+           family={Freedman},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Stanford University}%
+      }
+      \strng{namehash}{4ae041fbd5d254ea1c7fa87628ab6f49}
+      \strng{fullhash}{4ae041fbd5d254ea1c7fa87628ab6f49}
+      \strng{bibnamehash}{4ae041fbd5d254ea1c7fa87628ab6f49}
+      \strng{authorbibnamehash}{4ae041fbd5d254ea1c7fa87628ab6f49}
+      \strng{authornamehash}{4ae041fbd5d254ea1c7fa87628ab6f49}
+      \strng{authorfullhash}{4ae041fbd5d254ea1c7fa87628ab6f49}
+      \field{labelalpha}{DF78}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{109}
+      \field{title}{{de Finetti's Generalizations of Exchangeability}}
+      \field{type}{techreport}
+      \field{year}{1978}
+    \endentry
+    \entry{Frazier:2018:BayesOptTutorial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f59904428dedd78a02ae194a44057c63}{%
+           family={{Frazier}},
+           familyi={F\bibinitperiod},
+           given={Peter\bibnamedelima I.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f59904428dedd78a02ae194a44057c63}
+      \strng{fullhash}{f59904428dedd78a02ae194a44057c63}
+      \strng{bibnamehash}{f59904428dedd78a02ae194a44057c63}
+      \strng{authorbibnamehash}{f59904428dedd78a02ae194a44057c63}
+      \strng{authornamehash}{f59904428dedd78a02ae194a44057c63}
+      \strng{authorfullhash}{f59904428dedd78a02ae194a44057c63}
+      \field{labelalpha}{Fra18}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1807.02811}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{title}{{A Tutorial on Bayesian Optimization}}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{arXiv:1807.02811}
+      \range{pages}{-1}
+      \verb{eprint}
+      \verb 1807.02811
+      \endverb
+      \keyw{Statistics - Machine Learning,Computer Science - Machine Learning,Mathematics - Optimization and Control}
+    \endentry
+    \entry{HewittSavage:1955:rep_theorem}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bad518edbc49f555fc80bc4f4feebbea}{%
+           family={Hewitt},
+           familyi={H\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4c0baad1638fc0e232b6285b4cb38eef}{%
+           family={Savage},
+           familyi={S\bibinitperiod},
+           given={Leonard\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{da606253bc3b5418fac3abffe7e5b21f}
+      \strng{fullhash}{da606253bc3b5418fac3abffe7e5b21f}
+      \strng{bibnamehash}{da606253bc3b5418fac3abffe7e5b21f}
+      \strng{authorbibnamehash}{da606253bc3b5418fac3abffe7e5b21f}
+      \strng{authornamehash}{da606253bc3b5418fac3abffe7e5b21f}
+      \strng{authorfullhash}{da606253bc3b5418fac3abffe7e5b21f}
+      \field{labelalpha}{HS55}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Trans. Amer. Math. Soc.}
+      \field{title}{{Symmetric Measures on Cartesian Products}}
+      \field{volume}{80}
+      \field{year}{1955}
+      \field{pages}{470\bibrangedash 501}
+      \range{pages}{32}
+    \endentry
+    \entry{Kallenberg:2002}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f6bb1091b9da51c1ac66f8a4a75fcba9}{%
+           family={Kallenberg},
+           familyi={K\bibinitperiod},
+           given={Olav},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag New York}%
+      }
+      \strng{namehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{fullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{bibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorbibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authornamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \strng{authorfullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
+      \field{labelalpha}{Kal02}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{title}{Foundations of Modern Probability}
+      \field{year}{2002}
+      \true{nocite}
+    \endentry
+    \entry{Kingman:1978}{article}{}
+      \name{author}{1}{}{%
+        {{hash=395c7ae2fd43677ed88b7662703b5b26}{%
+           family={Kingman},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi F.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{395c7ae2fd43677ed88b7662703b5b26}
+      \strng{fullhash}{395c7ae2fd43677ed88b7662703b5b26}
+      \strng{bibnamehash}{395c7ae2fd43677ed88b7662703b5b26}
+      \strng{authorbibnamehash}{395c7ae2fd43677ed88b7662703b5b26}
+      \strng{authornamehash}{395c7ae2fd43677ed88b7662703b5b26}
+      \strng{authorfullhash}{395c7ae2fd43677ed88b7662703b5b26}
+      \field{labelalpha}{Kin78}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Probability}
+      \field{number}{2}
+      \field{title}{Uses of Exchangeability}
+      \field{volume}{6}
+      \field{year}{1978}
+      \true{nocite}
+      \field{pages}{183\bibrangedash 197}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1214/aop/1176995566
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1214/aop/1176995566
+      \endverb
+    \endentry
+    \entry{McCullagh:2005:ExchAndReg}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=0395c9a561d22547e752c4293328a09d}{%
+           family={McCullah},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford"}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{0395c9a561d22547e752c4293328a09d}
+      \strng{fullhash}{0395c9a561d22547e752c4293328a09d}
+      \strng{bibnamehash}{0395c9a561d22547e752c4293328a09d}
+      \strng{authorbibnamehash}{0395c9a561d22547e752c4293328a09d}
+      \strng{authornamehash}{0395c9a561d22547e752c4293328a09d}
+      \strng{authorfullhash}{0395c9a561d22547e752c4293328a09d}
+      \field{labelalpha}{McC05}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Celebrating Statistics: Papers in honour of Sir David Cox on his 80th birthday}
+      \field{chapter}{4}
+      \field{title}{Exchangeability and regression models}
+      \field{year}{2005}
+      \true{nocite}
+      \field{pages}{89\bibrangedash 114}
+      \range{pages}{26}
+    \endentry
+    \entry{Orbanz:Roy:2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6ebce25caeca70792e85946e1df6b0e5}{%
+           family={Orbanz},
+           familyi={O\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8c119ee3a501e8daf8a47ae46559c666}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{186102d794129ddb8563314e5e194f84}
+      \strng{fullhash}{186102d794129ddb8563314e5e194f84}
+      \strng{bibnamehash}{186102d794129ddb8563314e5e194f84}
+      \strng{authorbibnamehash}{186102d794129ddb8563314e5e194f84}
+      \strng{authornamehash}{186102d794129ddb8563314e5e194f84}
+      \strng{authorfullhash}{186102d794129ddb8563314e5e194f84}
+      \field{labelalpha}{OR15}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{2}
+      \field{title}{Bayesian Models of Graphs, Arrays and Other Exchangeable Random Structures}
+      \field{volume}{37}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{437\bibrangedash 461}
+      \range{pages}{25}
+    \endentry
+    \entry{PokharelDeardon:2016:GPInfectDisease}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8a757e8d2cf9eb708aacbacbd8d4a59b}{%
+           family={Pokharel},
+           familyi={P\bibinitperiod},
+           given={Gyanendra},
+           giveni={G\bibinitperiod}}}%
+        {{hash=512bb54ef30e09739ee70790f6ce6829}{%
+           family={Deardon},
+           familyi={D\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7064104dd0650395e2ce6ce2a9b25893}
+      \strng{fullhash}{7064104dd0650395e2ce6ce2a9b25893}
+      \strng{bibnamehash}{7064104dd0650395e2ce6ce2a9b25893}
+      \strng{authorbibnamehash}{7064104dd0650395e2ce6ce2a9b25893}
+      \strng{authornamehash}{7064104dd0650395e2ce6ce2a9b25893}
+      \strng{authorfullhash}{7064104dd0650395e2ce6ce2a9b25893}
+      \field{labelalpha}{PD16}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Canadian Journal of Statistics}
+      \field{number}{4}
+      \field{title}{Gaussian process emulators for spatial individual-level models of infectious disease}
+      \field{volume}{44}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{480\bibrangedash 501}
+      \range{pages}{22}
+    \endentry
+    \entry{RasmussenWilliams:2006}{book}{}
+      \name{author}{2}{}{%
+        {{hash=bbec4caec3f553671700b51cb05faecc}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Carl\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d34fdfcbfcb5412397b946351370db22}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelimb K.\bibnamedelimi I.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{4bff458bc46e5498908a76158ea1d886}
+      \strng{fullhash}{4bff458bc46e5498908a76158ea1d886}
+      \strng{bibnamehash}{4bff458bc46e5498908a76158ea1d886}
+      \strng{authorbibnamehash}{4bff458bc46e5498908a76158ea1d886}
+      \strng{authornamehash}{4bff458bc46e5498908a76158ea1d886}
+      \strng{authorfullhash}{4bff458bc46e5498908a76158ea1d886}
+      \field{labelalpha}{RW06}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Gaussian Processes for Machine Learning}
+      \field{year}{2006}
+      \true{nocite}
+    \endentry
+    \entry{WoodsEtAl:2017:ACEAlgorithm}{article}{}
+      \name{author}{4}{}{%
+        {{hash=846ca7acf9d8c1e3e23911b6a6ed389d}{%
+           family={Woods},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3950dda93580797bb7411a6cce79efaf}{%
+           family={Overstall},
+           familyi={O\bibinitperiod},
+           given={Antony\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=03a2e443ab1aecdaeed5b3f35f67f4e4}{%
+           family={Adamou},
+           familyi={A\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f450eb66a715b9d61cf5927d2fc7a00b}{%
+           family={Waite},
+           familyi={W\bibinitperiod},
+           given={Timothy\bibnamedelima W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{1dc1b008a304de4a5b689a3312e86d23}
+      \strng{fullhash}{2617ae38e87c23ef4724dbb803ef918c}
+      \strng{bibnamehash}{1dc1b008a304de4a5b689a3312e86d23}
+      \strng{authorbibnamehash}{1dc1b008a304de4a5b689a3312e86d23}
+      \strng{authornamehash}{1dc1b008a304de4a5b689a3312e86d23}
+      \strng{authorfullhash}{2617ae38e87c23ef4724dbb803ef918c}
+      \field{labelalpha}{Woo+17}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quality Engineering}
+      \field{number}{1}
+      \field{title}{{Bayesian design of experiments for generalized linear models and dimensional analysis with industrial and scientific application}}
+      \field{volume}{29}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{91\bibrangedash 103}
+      \range{pages}{13}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

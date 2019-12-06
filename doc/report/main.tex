@@ -13,9 +13,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % your title/author/date information go here
-\title{\LaTeX\ Template for STAT 547C Final Project} % replace with your title
-\author{Benjamin Bloem-Reddy} % replace with your name
-\date{\today} % replace with your submission date
+\title{Exchangeability in Gaussian Process Regression} % replace with your title
+\author{Gian Carlo Di-Luvi} % replace with your name
+\date{December 10, 2019} % replace with your submission date
 
 \bibliography{../../ref/STAT_547C.bib} % add the title of your bibliography file
 
@@ -29,8 +29,18 @@
 
 % add your main body sections here
 
+% exchangeability section
+\include{sections/exchangeability}
+
+
+% GPs section
+\include{sections/gps}
+
+
 % open questions section
 \include{sections/open-questions}
+
+
 
 %%%% appendix
 \clearpage
@@ -42,7 +52,9 @@
 % any other appendix sections
 
 
+
 % bibliography
+\nocite{*}
 \printbibliography
 
 \end{document}
