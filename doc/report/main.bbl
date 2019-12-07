@@ -162,7 +162,6 @@
       \field{title}{{Distribution Theory for Hierarchical Processes}}
       \field{volume}{47}
       \field{year}{2019}
-      \true{nocite}
       \field{pages}{67\bibrangedash 92}
       \range{pages}{26}
     \endentry
@@ -212,7 +211,6 @@
       \field{journaltitle}{arXiv e-prints}
       \field{title}{{Local Exchangeability}}
       \field{year}{2019}
-      \true{nocite}
       \field{pages}{arXiv:1906.09507}
       \range{pages}{-1}
       \verb{eprint}
@@ -489,7 +487,6 @@
       \field{chapter}{4}
       \field{title}{Exchangeability and regression models}
       \field{year}{2005}
-      \true{nocite}
       \field{pages}{89\bibrangedash 114}
       \range{pages}{26}
     \endentry
@@ -589,7 +586,6 @@
       \field{edition}{1}
       \field{title}{Gaussian Processes for Machine Learning}
       \field{year}{2006}
-      \true{nocite}
     \endentry
     \entry{WoodsEtAl:2017:ACEAlgorithm}{article}{}
       \name{author}{4}{}{%

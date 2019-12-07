@@ -2,7 +2,7 @@
 
 % Exchangeability section
 
-\section{Exchangeability}
+\section{Exchangeability} \label{section:exchangeability}
 
 
 Throughout this section we assume that all random variables of interest take values in a standard measurable space $(\calX, \calB(\calX))$, unless otherwise stated. We start by defining exchangeability for sequences of random variables in such a setting.
@@ -55,7 +55,7 @@ Observe that the integral in Equation (\ref{eq:definetti_thm}) is over a set of 
 Technicalities aside, Theorem \ref{thm:definetti} intuitively tells us that, conditional on an unknown distribution $F$ (which is always guaranteed to exist), any subsequence of an exchangeable process can be thought of as a random sample with distribution $F$. This measure plays the role of an infinite-dimensional parameter \cite[][Ch.~4.3]{BernardoSmith:1994:BayesianTheory}. Furthermore, $F$ has a unique prior distribution $\mu$, which justifies the use of a Bayesian approach in settings with exchangeable data. \\
 
 
-However, there are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$; namely, the setting for regression analysis. It is clear that $(X_n)$ is not an exchangeable sequence, and so de Finetti's representation theorem cannot be immediatly used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
+However, there are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$; namely, the setting for dependence analysis. It is clear that $(X_n)$ is not an exchangeable sequence, and so de Finetti's representation theorem cannot be immediatly used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
 
 
 \subsection{Partial exchangeability}
@@ -63,7 +63,7 @@ However, there are very general settings where even exchangeability is too stron
 
 de Finetti \cite{deFinetti:1938:partial_exch} introduced the concept of \textit{partial exchangeability} precisely for settings in which the variables of interest have covariates. The idea, which we formalize below, is to require exchangeability only for variables with the same covariate values.
 
-\begin{definition}[Partial exchangeability]
+\begin{definition}[Partial exchangeability] \label{def:partial_exchangeability}
 	Let $X = (X_n)_{n=1}^{\infty}$ be a sequence of random variables, each one of them endowed with a covariate $t_n \in \calT$. For every $t \in \calT$ define the $t$-class $X_t$ to be the subsequence of $X$ such that all the covariates of $X_t$ are $t$, that is,
 	\begin{equation*}
 		X_t = \{ X_n \; : \; t_n = t \}.
@@ -73,7 +73,7 @@ de Finetti \cite{deFinetti:1938:partial_exch} introduced the concept of \textit{
 
 A partially exchangeable sequence can be naturally grouped in an array-like fashion according to the different values that the covariates take. Specifically, suppose that $\calT = \{t_1, ..., t_d \}$, so that there are $d$ classes. Then the sequence $\left\{ (X_{t_i, \, n})_{n=1}^{\infty} \, : \, i=1, ..., d \right\}$ is a partially exchangeable sequence if $(X_{t_i, \, n})_{n=1}^{\infty}$ is exchangeable for each $i=1, ...d$. \\
 
-Under the assumption that every class is countably infinite, a representation theorem analogous to \ref{thm:definetti} exists \cite{CampbellEtAl:2019:LocalExch}. Before giving a more formal statement, we showcase an example.
+Under the assumption that every class is countably infinite, a representation theorem analogous to \ref{thm:definetti} exists. Before giving a more formal statement, we showcase an example.
 
 
 \begin{mdframed}[backgroundcolor=mygray] 
@@ -123,7 +123,7 @@ Campbell et al. \cite{CampbellEtAl:2019:LocalExch} propose the notion of \textit
 \end{definition}
 
 
-\begin{definition}[Local exchangeability]
+\begin{definition}[Local exchangeability] \label{def:local_exchangeability}
 	Let $X = (X_t)_{t \in \calT}$ be a sequence of random variables with covariate space $\calT$ and $d: \calT \times \calT \to \bbR_{+}$ a pseudometric (distances between different points need not be positive). The process $X$ is said to be $f$-locally exchangeable if there exists a function $f: \bbR_{+} \to \bbR_{+}$ continuous at zero and with $f(0) = 0$ such that, for every finite subset $T \subset \calT$ and permutation $\pi$ of $T$,
 	\begin{equation} \label{eq:local_exch}
 		d_{\mathrm{TV}} (X_T, X_{\pi T}) \leq \sum_{t \in T} f(d(t, \pi(t))).
@@ -131,15 +131,58 @@ Campbell et al. \cite{CampbellEtAl:2019:LocalExch} propose the notion of \textit
 \end{definition}
 
 
-For a very rich discussion of this idea see \cite{CampbellEtAl:2019:LocalExch}, where the authors discuss e.g. the usage of the total variation distance instead of other divergence, and provide some examples of locally-exchangeable processes from the Bayesian nonparametrics literature. In the interest of brevity, we give a very simple example and state the main result, namely, the de Finetti-like representation theorem.
+For a very rich discussion of this idea see \cite{CampbellEtAl:2019:LocalExch}, where the authors discuss e.g. the usage of the total variation distance instead of other divergence measures, and provide some examples of locally-exchangeable processes from the Bayesian nonparametrics literature. \\
+
+
+
+We now state the main result for local exchangeability. The idea behind it is that, so long as the covariate space $\calT$ is ``nice,'' a de Finetti-like representation of $f$-locally exchangeable sequences exists in terms of a stochastic process $G$, conditional on which the sequence exhibits independence (Equation \ref{eq:local_exch_1}). Furthermore, the function $f$ controls the ``smoothness'' behaviour of $G$ (Equation \ref{eq:local_exch_2}). 
+
+\begin{theorem}[Campbell et al. (2019)] \label{thm:de_finetti_local}
+	Let $X = (X_t)_{t \in \calT}$ be a stochastic process on a separable space $\calT$, which furthermore has no isolated points under the pseudometric $d$. Then $X$ is $f$-locally exchangeable if and only if there exists a random measure-valued stochastic process $G = (G_t)_{t \in \calT}$ such that, for any finite subset of covariates $T \in \calT$ and permutation $\pi$ of $T$,
+	\begin{equation} \label{eq:local_exch_1}
+		\bbP \{ X_T \in \cdot \, | \, G \} \overset{\mathrm{a.s.}}{=} \prod_{t \in \calT} G_t := G_T
+	\end{equation}
+	and
+	\begin{equation} \label{eq:local_exch_2}
+		\sup_{A} \bbE \left| G_T(A) - G_{\pi T} (A) \right| \leq \sum_{t \in \calT} f(d(t, \pi(t))).
+	\end{equation}
+	Furthermore, $G$ is unique up to modification, that is, if $G'$ also satisfies Equations (\ref{eq:local_exch_1}) and (\ref{eq:local_exch_2}) then $\bbP \left\{ G_t = G_t^{'} \right\} = 1$ for all $t \in \calT$.
+\end{theorem}
+
+
+Local exchangeability manages to relax the requirements of exchangeability and partial exchangeability while still preserving a representation result. However, in doing so, the cost it pays is an increased complexity in the calculations involved. Where most processes can be easily determined to be either (partially) exchangeable or not---sometimes even by construction---actually proving a sequence to be locally exchangeable is not an easy feat. \cite[][Proposition 3]{CampbellEtAl:2019:LocalExch} provides necessary conditions which make this task easier, but only marginally so. 
+
+
+
+\subsection{Regression exchangeability}
+
+
+
+McCullagh \cite{McCullagh:2005:ExchAndReg} proposed yet another notion of exchangeability. Unlike the previous ideas so far discussed, McCullagh aims not for generality but for a definition that works well specifically in a regression setting, appealing to the idea that exchangeability should capture a sense of homogeneity.
+
+\begin{definition}[Regression exchangeability]	\label{def:regression_exchangeability}
+	Let $X = (X_n)_{n=1}^{\infty}$ be a sequence of random variables, each one of them endowed with a covariate $t_n \in \calT$. The sequence $X$ is said to be regression exchangeable (modulo $T = (t_n)$) if given two arbitrary subsets $T_1, T_2 \subset T$ of the covariate space the following two conditions hold:
+	\begin{enumerate}
+		\item If $T_1 \subset T_2$ then the distribution of $X_{T_1}$ must be the marginal distribution of $X_{T_2}$ under co-ordinate deletion. \label{cond:reg_exch_1}
+		\item If $T_1 = T_2$ then $X_{T_1} \equdist X_{T_2}$. \label{cond:reg_exch_2}
+	\end{enumerate}
+\end{definition}
+
+
+Condition \ref{cond:reg_exch_1} in Definition \ref{def:regression_exchangeability} simply ensures compatibility with respect to subsampling from $X$, and in the context of Gaussian process regression it is known as \textit{marginalization} property \cite[][p.~13]{RasmussenWilliams:2006}. Condition \ref{cond:reg_exch_2} may seem trivial, but observe that $X_{T_1}$ and $X_{T_2}$ may very well be different. However, so long as their covariates are the same, any distinction between the actual values within $X_{T_1}$ and $X_{T_2}$ has no effect on their distribution. We showcase this with an example.
 
 
 
 \begin{mdframed}[backgroundcolor=mygray] 
-	\begin{example} 
-		Consider a
+	\begin{example} \label{ex:reg_exch_1}
+		Let $X = X_1, X_2, ...$ be independent random variables such that $X_i \sim \calN (\eta + \tau_{t_i}, 1)$, where $T = (t_n)_{n=1}^{\infty} = (1, 2, 3, 1, 2, 3, ...)$. $X$, which can be thought of as the response of an experiment with one factor and three levels, has independent components, but is nonetheless not exchangeable. However, $X$ is clearly regression exchangeable (modulo $T$): given $T_1, T_2 \subset T$, $X_{T_1}$ is the sample of such an experiment and follows a multivariate Normal distribution with covariance matrix $\sigma^2 I_{|T_1|}$ and mean vector $(\eta + \tau_{t_i})_{t_i \in T_1}$, and similarly with $T_2$. Clearly if $T_1 \subset T_2$ then the distribution of $T_1$ is obtained by ``removing'' the covariates in $T_2 \setminus T_1$. Furhermore, if $T_1 = T_2$ then (even if the actual $X_i$'s selected are different) $X_{T_1} \equdist X_{T_2}$.
 	\end{example}
 \end{mdframed}
+
+
+Example \ref{ex:reg_exch_1} works well due to the availability of replicates. However, unlike partial exchangeability (Example \ref{ex:binary_definetti}), a process may not have replicates at all and still be regression exchangeable, whereas it would not be partially so. However, it is worth noting that Condition \ref{cond:reg_exch_2} in Definition \ref{def:regression_exchangeability} does reduce to a triviality in such a setting: the only way $T_1 = T_2$ would be if $X_{T_1} = X_{T_2}$ exactly. \\
+
+To the best of our knowledge, there is no de Finetti-like representation theorem available for regression exchangeability.
 
 
 
