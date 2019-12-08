@@ -1,0 +1,32 @@
+% !TEX root = ../main.tex
+
+% additional technical results section
+
+\section{Additional technical results}
+
+
+\begin{lemma} \label{lemma:lipschitz}
+	Let $\Phi$ and $\phi$ denote the \textit{cdf} and \textit{pdf} of a standard Normal distribution, respectively. Then, for $x_1 \leq x_2$,
+	\begin{equation*}
+		\Phi(x_2) - \Phi(x_1) \leq \frac{x_2 - x_1}{\sqrt{2 \pi}}.
+	\end{equation*}
+	In other words, $1/\sqrt{2 \pi}$ is a Lipschitz constant of $\Phi$.\footnote{Actually, it is \textit{the} Lipschitz constant of $\Phi$, although we only prove the weaker result here stated for the sake of brevity.}
+\end{lemma}
+
+
+\textbf{Proof. \hspace{0.05cm}} Recall that $\phi(x) \leq \phi(0) = 1 / \frac{1}{2\pi}$, from where trivially
+\begin{equation*}
+	\Phi(x_2) - \Phi(x_1) = \int_{x_1}^{x_2} du \, \phi(u) \leq \frac{1}{\sqrt{2 \pi}} \int_{x_1}^{x_2} du = \frac{x_2 - x_1}{\sqrt{2 \pi}}.
+\end{equation*}
+\qed
+
+
+
+\begin{lemma} \label{lemma:halfnormal}
+	Let $X_1 \sim \calN(0, \sigma_1^2)$ and $X_2 \sim \calN(0, \sigma_2^2)$ be Normal random variables with covariance $\sigma_{12}$. Then $\bbE |X_1 - X_2| = \sqrt{\frac{2}{\pi} (\sigma_1^2 + \sigma_2^2 - 2\sigma_{12})}$.
+\end{lemma}
+
+\textbf{Proof. \hspace{0.05cm}} We have that $X_1 - X_2 \sim \calN(0, \sigma_1^2 + \sigma_2^2 - 2\sigma_{12})$, and so $W := |X_1 - X_2| \sim \mathrm{HN} (\sqrt{\sigma_1^2 + \sigma_2^2 - 2\sigma_{12}})$, where HF refers to the Half-Normal distribution. Indeed, it is well known that if $U \sim \mathrm{HN} (\xi)$ then $\bbE[U] = \sqrt{2 / \pi} \xi$, from where result follows.
+
+\qed
+

@@ -448,7 +448,6 @@
       \field{title}{Uses of Exchangeability}
       \field{volume}{6}
       \field{year}{1978}
-      \true{nocite}
       \field{pages}{183\bibrangedash 197}
       \range{pages}{15}
       \verb{urlraw}
@@ -586,6 +585,32 @@
       \field{edition}{1}
       \field{title}{Gaussian Processes for Machine Learning}
       \field{year}{2006}
+    \endentry
+    \entry{Schervish:1995}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7ce02668c4a235ee8aa8e46159f5ba9e}{%
+           family={Schervish},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7ce02668c4a235ee8aa8e46159f5ba9e}
+      \strng{fullhash}{7ce02668c4a235ee8aa8e46159f5ba9e}
+      \strng{bibnamehash}{7ce02668c4a235ee8aa8e46159f5ba9e}
+      \strng{authorbibnamehash}{7ce02668c4a235ee8aa8e46159f5ba9e}
+      \strng{authornamehash}{7ce02668c4a235ee8aa8e46159f5ba9e}
+      \strng{authorfullhash}{7ce02668c4a235ee8aa8e46159f5ba9e}
+      \field{labelalpha}{Sch95}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Theory of Statistics}
+      \field{year}{1995}
     \endentry
     \entry{WoodsEtAl:2017:ACEAlgorithm}{article}{}
       \name{author}{4}{}{%

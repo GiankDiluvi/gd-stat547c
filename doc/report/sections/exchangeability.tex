@@ -150,7 +150,7 @@ We now state the main result for local exchangeability. The idea behind it is th
 \end{theorem}
 
 
-Local exchangeability manages to relax the requirements of exchangeability and partial exchangeability while still preserving a representation result. However, in doing so, the cost it pays is an increased complexity in the calculations involved. Where most processes can be easily determined to be either (partially) exchangeable or not---sometimes even by construction---actually proving a sequence to be locally exchangeable is not an easy feat. \cite[][Proposition 3]{CampbellEtAl:2019:LocalExch} provides necessary conditions which make this task easier, but only marginally so. 
+Local exchangeability manages to relax the requirements of exchangeability and partial exchangeability while still preserving a representation result. However, in doing so, the cost it pays is an increased complexity in the calculations involved. Where most processes can be easily determined to be either (partially) exchangeable or not---sometimes even by construction---actually proving a sequence to be locally exchangeable is not an easy feat. Proposition \ref{prop:sufficient_local_exchangeability} provides sufficient conditions which make this task easier, but only marginally so. 
 
 
 
@@ -169,7 +169,7 @@ McCullagh \cite{McCullagh:2005:ExchAndReg} proposed yet another notion of exchan
 \end{definition}
 
 
-Condition \ref{cond:reg_exch_1} in Definition \ref{def:regression_exchangeability} simply ensures compatibility with respect to subsampling from $X$, and in the context of Gaussian process regression it is known as \textit{marginalization} property \cite[][p.~13]{RasmussenWilliams:2006}. Condition \ref{cond:reg_exch_2} may seem trivial, but observe that $X_{T_1}$ and $X_{T_2}$ may very well be different. However, so long as their covariates are the same, any distinction between the actual values within $X_{T_1}$ and $X_{T_2}$ has no effect on their distribution. We showcase this with an example.
+Condition \ref{cond:reg_exch_1} in Definition \ref{def:regression_exchangeability} simply ensures compatibility with respect to subsampling from $X$, and in the context of Gaussian process regression it is known as the \textit{marginalization} property \cite[][p.~13]{RasmussenWilliams:2006}. Condition \ref{cond:reg_exch_2} may seem trivial, but observe that $X_{T_1}$ and $X_{T_2}$ may very well be different. However, so long as their covariates are the same, any distinction between the actual values within $X_{T_1}$ and $X_{T_2}$ has no effect on their distribution. We showcase this with an example.
 
 
 

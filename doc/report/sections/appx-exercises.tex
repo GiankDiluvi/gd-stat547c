@@ -3,3 +3,32 @@
 % Exercises section
 
 \section{Exercises}
+
+
+\begin{exercise}[Adapted from \cite{Kingman:1978}] \label{ex:n_symmetric}
+	Let $X = (X_n)_{n=1}^{\infty}$ be an exchangeable sequence of random variables taking values in a measurable space $(\calX, \calF)$ with common expectation. A random variable $Y = g(X)$ is said to be $n$-\textit{symmetric} if it is bounded and invariant under permutations of its first $n$ components, that is, if
+	\begin{equation} \label{eq:n_symmetric}
+		g(X_1, X_2, ...) = g(X_{\pi(1)}, ..., X_{\pi(n)}, X_{n+1}, ...)
+	\end{equation}
+	for every permutation $\pi$ of $\bbN_n$. Define $\calF_n$ to be the smallest $\sigma$-algebra with respect to which all $n$-symmetric random variables are measurable. Let $f$ be an integrable numerical $\calF$-measurable function, that is, $\bbE |f(X_n)| < \infty$ for all $n$. Prove that $\frac{1}{n} \sum_{j=1}^n f(X_j)$ is a version of $\bbE[ f(X_1) \, | \, \calF_n ]$ for every $n$.
+\end{exercise}
+
+\textbf{Solution \ref{ex:n_symmetric}. \hspace{0.05cm}} Fix $n \in \bbN$. Because the components of $X$ have common expectation, clearly $\bbE[f(X_1)] = \bbE[f(X_j)]$ for every $1 \leq j \leq n$ and, moreover, $\bbE[ f(X_1) g(X) ] = \bbE[ f(X_j) g(X) ]$ for every $g \in \calF_n$. Thus,
+\begin{equation*}
+	\bbE \left[ \frac{1}{n} \sum_{j=1}^n f(X_j) g(X) \right] = \frac{1}{n} \sum_{j=1}^n \bbE[ f(X_j) g(X) ] = \frac{1}{n} \sum_{j=1}^n \bbE[ f(X_1) g(X) ] = \bbE[ f(X_1) g(X) ],
+\end{equation*}
+and so $\frac{1}{n} \sum_{j=1}^n f(X_j)$ satisfies the projection property. Furthermore, it is clearly $n$-symmetric as a function of $X$, and hence is in $\calF_n$, which completes the proof. \\
+\qed
+
+\vskip 0.25cm
+
+Observe also that $\calF_{n+1} \subset \calF_n$: if a function is $n+1$-symmetric it is also $n$-symmetric. A reverse-martingale argument \cite[see Theorem B.124 (Lévy's theorem: part II) in][p.~650]{Schervish:1995} can be used to show that
+\begin{equation} \label{eq:LLN_exch}
+	\lim_{n \to \infty} \frac{1}{n} \sum_{j=1}^n f(X_j) = \bbE[ f(X_1) \, | \, \calF_{\infty}] \quad \mathrm{a.s.}, 
+\end{equation}
+where
+\begin{equation*}
+	\calF_{\infty} = \bigcap_{n=1}^{\infty} \calF_n.
+\end{equation*}
+Equation (\ref{eq:LLN_exch}) is a version of the Strong Law of Large Numbers for exchangeable sequences.
+
