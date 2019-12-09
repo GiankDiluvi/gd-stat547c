@@ -77,7 +77,7 @@ We now study exchangeability in the context of Gaussian process regression. Let 
 	Let $X = (X_t)_{t \in \calT} \sim \GP (0, \kappa)$. Then $X$ is not exchangeable.
 \end{proposition}
 
-\textbf{Proof. \hspace{0.05cm}} Conceptually this is trivially true, and is due to the fact that the covariance function $\kappa$---which completely determines the process---is sensible to the distance between covariates. The order of the covariates matters, and so the sequence cannot be exchangeable. Formally, let $T = \{ t_1, t_2, t_3 \}$ with $t_2 = t_1 + 1, t_3 = t_1 + 2$ and $\pi$ be a permutation of $T$ such that $\pi(t_1) = t_2$,  $\pi(t_2) = t_1$, and $\pi(t_3) = t_3$. Then $X_T = \calN (0, K(T, T))$ and $X_{\pi T} = \calN(0, K(\pi T, \pi T)$. If $X$ were exchangeble, then $X_T \equdist X_{\pi T}$, and particularly $\kappa(t_1, t_3) = \kappa(t_2, t_3)$, which is clearly not the case because $\kappa(t_1, t_3) = e^{-1}$ but $\kappa(t_2, t_3) = e^{-1/2}$, regardless of whether the process is noisy or not.
+\textbf{Proof. \hspace{0.05cm}} Conceptually this is trivially true, and is due to the fact that the covariance function $\kappa$---which completely determines the process---is sensible to the distance between covariates. The order of the covariates matters, and so the sequence cannot be exchangeable. Formally, let $T = \{ t_1, t_2, t_3 \}$ with $t_2 = t_1 + 1, t_3 = t_1 + 2$ and $\pi$ be a permutation of $T$ such that $\pi(t_1) = t_2$,  $\pi(t_2) = t_1$, and $\pi(t_3) = t_3$. Then $X_T = \calN (0, K(T, T))$ and $X_{\pi T} = \calN(0, K(\pi T, \pi T)$. If $X$ were exchangeable, then $X_T \equdist X_{\pi T}$, and particularly $\kappa(t_1, t_3) = \kappa(t_2, t_3)$, which is clearly not the case because $\kappa(t_1, t_3) = e^{-1}$ but $\kappa(t_2, t_3) = e^{-1/2}$, regardless of whether the process is noisy or not.
 
 \qed
 
@@ -167,7 +167,7 @@ The result follows from Proposition \ref{prop:sufficient_local_exchangeability} 
 
 \vskip 0.25cm
 
-It is not immediatly clear from the proof whether this result holds for noise-free GPs. The argument essentially splits the variability in each observation into the variability within ($\sigma$) and between ($K$) covariates, and takes advantage of the fact that the within-covariate variability does not depend on the actual value of the covariate. But if no replicates are available, the argument no longer works and the function $f$ is not even defined, for we would have $\sigma = 0$. \\
+It is not immediately clear from the proof whether this result holds for noise-free GPs. The argument essentially splits the variability in each observation into the variability within ($\sigma$) and between ($K$) covariates, and takes advantage of the fact that the within-covariate variability does not depend on the actual value of the covariate. But if no replicates are available, the argument no longer works and the function $f$ is not even defined, for we would have $\sigma = 0$. \\
 
 On the other hand, recalling the definition of local exchangeability (Definition \ref{def:local_exchangeability}), it is intuitively clear that noise-free GPs should be locally exchangeable. It turns out that it is possible to modify the previous argument to get a positive result for noise-free GPs. We state the result, although the proof is left as an exercise.
 

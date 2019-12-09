@@ -7,7 +7,7 @@
 
 
 
-There are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$. It is clear that $(X_n)$ is not an exchangeable sequence, and so de Finetti's representation theorem cannot be immediatly used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
+There are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$. It is clear that $(X_n)$ is not an exchangeable sequence, and so de Finetti's representation theorem cannot be immediately used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
 
 
 
@@ -33,7 +33,7 @@ Under the assumption that every class is countably infinite, a representation th
 	\begin{example} 
 		Consider an experiment in which two types of binary observations, $(X_{0, \, n})_{n=1}^{\infty}$ and $(X_{1, \, n})_{n=1}^{\infty}$, are under study. For example, $X_{0, \, i}$ could measure if a male patient recovered (1) or not (0) after taking a certain medication, while $X_{1, \, i}$ would measure the same outcome but for a female patient. In this case the covariate $t_n$ is also binary, and only indicates whether the patient is male (0) or female (1). Hence, there are two classes: $X_0$ and $X_1$, which correspond to male and female patients, respectively. \\
 		
-		If it is deemed that the value of the covariate does not affect the outcome of the variables, then exchangeability of the sequence $X = (X_0, X_1)$ might be a feasible assumption. If this is not so, it might still be feasible to assume exchangeability within male patients and whithin female patients. In that case, $X$ would be partially exchangeable. \\
+		If it is deemed that the value of the covariate does not affect the outcome of the variables, then exchangeability of the sequence $X = (X_0, X_1)$ might be a feasible assumption. If this is not so, it might still be feasible to assume exchangeability within male patients and within female patients. In that case, $X$ would be partially exchangeable. \\
 		
 		Furthermore, for such a partially exchangeable process there exists a measure $\mu$ such that, for every $l, r \in \bbN$,
 				\begin{equation*}
@@ -128,7 +128,7 @@ Condition \ref{cond:reg_exch_1} in Definition \ref{def:regression_exchangeabilit
 
 \begin{mdframed}[backgroundcolor=mygray] 
 	\begin{example} \label{ex:reg_exch_1}
-		Let $X = X_1, X_2, ...$ be independent random variables such that $X_i \sim \calN (\eta + \tau_{t_i}, 1)$, where $T = (t_n)_{n=1}^{\infty} = (1, 2, 3, 1, 2, 3, ...)$. $X$, which can be thought of as the response of an experiment with one factor and three levels, has independent components, but is nonetheless not exchangeable. However, $X$ is clearly regression exchangeable (modulo $T$): given $T_1, T_2 \subset T$, $X_{T_1}$ is the sample of such an experiment and follows a multivariate Normal distribution with covariance matrix $\sigma^2 I_{|T_1|}$ and mean vector $(\eta + \tau_{t_i})_{t_i \in T_1}$, and similarly with $T_2$. Clearly if $T_1 \subset T_2$ then the distribution of $T_1$ is obtained by ``removing'' the covariates in $T_2 \setminus T_1$. Furhermore, if $T_1 = T_2$ then (even if the actual $X_i$'s selected are different) $X_{T_1} \equdist X_{T_2}$.
+		Let $X = X_1, X_2, ...$ be independent random variables such that $X_i \sim \calN (\eta + \tau_{t_i}, 1)$, where $T = (t_n)_{n=1}^{\infty} = (1, 2, 3, 1, 2, 3, ...)$. $X$, which can be thought of as the response of an experiment with one factor and three levels, has independent components, but is nonetheless not exchangeable. However, $X$ is clearly regression exchangeable (modulo $T$): given $T_1, T_2 \subset T$, $X_{T_1}$ is the sample of such an experiment and follows a multivariate Normal distribution with covariance matrix $\sigma^2 I_{|T_1|}$ and mean vector $(\eta + \tau_{t_i})_{t_i \in T_1}$, and similarly with $T_2$. Clearly if $T_1 \subset T_2$ then the distribution of $T_1$ is obtained by ``removing'' the covariates in $T_2 \setminus T_1$. Furthermore, if $T_1 = T_2$ then (even if the actual $X_i$'s selected are different) $X_{T_1} \equdist X_{T_2}$.
 	\end{example}
 \end{mdframed}
 
