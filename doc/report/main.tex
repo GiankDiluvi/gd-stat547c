@@ -13,9 +13,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % your title/author/date information go here
-\title{Exchangeability in Gaussian Process Regression} % replace with your title
-\author{Gian Carlo Di-Luvi} % replace with your name
-\date{December 10, 2019} % replace with your submission date
+\title{Exchangeability in Dependence Modelling} % replace with your title
+\author{Gian Carlo Di-Luvi 
+\\
+{\normalsize Department of Statistics, University of British Columbia}} % replace with your name
+\date{\normalsize December 10, 2019} % replace with your submission date
 
 \bibliography{../../ref/STAT_547C.bib} % add the title of your bibliography file
 
@@ -23,22 +25,42 @@
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
+
+\vskip 0.5cm
+
+\begin{abstract}
+Hello world
+\end{abstract}
+
+\textbf{Keywords:} exchangeability; representation theorem; dependence modelling; Gaussian process regression.
+
+
+
 
 % background section
-\include{sections/background}
+\cleardoublepage
+\setcounter{page}{1}
+\input{sections/background}
+
+\vskip 2cm
 
 % add your main body sections here
 
 % exchangeability section
-\include{sections/exchangeability}
+\input{sections/exchangeability}
+
+\vskip 2cm
 
 
 % GPs section
-\include{sections/gps}
+\input{sections/gps}
+
+\vskip 2cm
 
 
 % open questions section
-\include{sections/open-questions}
+\input{sections/open-questions}
 
 
 
@@ -47,15 +69,18 @@
 \appendix
 
 % exercises and problems
-\include{sections/appx-exercises}
+\input{sections/appx-exercises}
+
+\vskip 2cm
 
 % any other appendix sections
-\include{sections/appx-technicalities}
+\input{sections/appx-technicalities}
 
 
 
 % bibliography
-\nocite{*}
+%\nocite{*}
+\clearpage
 \printbibliography
 
 \end{document}

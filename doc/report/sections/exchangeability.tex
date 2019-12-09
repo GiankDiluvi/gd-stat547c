@@ -2,60 +2,13 @@
 
 % Exchangeability section
 
-\section{Exchangeability} \label{section:exchangeability}
-
-
-Throughout this section we assume that all random variables of interest take values in a standard measurable space $(\calX, \calB(\calX))$, unless otherwise stated. We start by defining exchangeability for sequences of random variables in such a setting.
-
-\begin{definition}[Exchangeability] \label{def:exchangeability}
-	The random variables $X = X_1, X_2, ..., X_n$ are said to be finitely exchangeable if
-	\begin{equation*}
-		(X_1, ..., X_n) \equdist (X_{\pi(1)}, ..., X_{\pi(n)})
-	\end{equation*}
-	for any permutation $\pi$ of $\bbN_n :=\{1, ..., n \}$.\footnote{For the sake of completeness, a permutation $\pi$ of $\bbN_n$ is simply a bijection in $\bbN_n$.} A countable sequence $(X_n)_{n=1}^{\infty}$ of random variables is said to be exchangeable if every finite subsequence of it is finitely exchangeable.
-\end{definition}
-
-The notion of exchangeability captures a sense of homogeneity in the population, but it is a weaker assumption than independence and identical distribution, as we show in the following example.
-
-
-\begin{mdframed}[backgroundcolor=mygray] 
-	\begin{example} \label{ex:iid_exch}
-		Let $X_1, X_2, ...$ be i.i.d. random variables with common distribution $\mu$. For $n \in \bbN$ consider (without loss of generality) the subsequence $X = (X_1, ..., X_n)$. Then the joint distribution $\mu_n$ of $X$ is, due to independence, the $n$-product of $\mu$: $\mu_n = \mu \times \mu \times \cdots \times \mu$. For any permutation $\pi$ of $\bbN_n$ it is possible to trivially rearrange the products, and so clearly $X \equdist (X_{\pi(1)}, ..., X_{\pi(n)})$. Hence, any i.i.d. sequence is exchangeable.
-	\end{example}
-\end{mdframed}
-
-The converse of Example \ref{ex:iid_exch} is not true. (See the suplementary exercises.) \\
-
-
-The main result that follows from exchangeability is de Finetti's representation theorem, which has been proved in increasing generality \cite{deFinetti:1930:RepTheorem, HewittSavage:1955:rep_theorem, DiaconisFreedman:1978:Generalizations}.  
-
-\begin{theorem}[de Finneti] \label{thm:definetti}
-	$X = (X_n)_{n=1}^{\infty}$ is an exchangeable sequence of random variables if and only if there exists a unique probability measure $\mu$ on $\calP$---the set of all probability measures on $(\calX, \calB(\calX))$---such that
-	\begin{equation} \label{eq:definetti_thm}
-		\bbP \{ X_1 \in A_1, ..., X_n \in A_n \} = \int_{\calP}  \prod_{i=1}^n F(A_i) \, \mu(dF)
-	\end{equation}
-	for every $n \in \bbN$ and $A_1, ..., A_n \in \calB(\calX)$.
-\end{theorem}
-
-Observe that the integral in Equation (\ref{eq:definetti_thm}) is over a set of numerical functions---namely, the set of probability measures on $(\calX, \calB(\calX))$. 
-
-
-\begin{mdframed}[backgroundcolor=mygray] 
-	\begin{example} \label{ex:binary_definetti}
-		Let $X = X_1, X_2, ...$ be an exchangeable sequence of binary random variables, that is, $\calX = \{0, 1\}$. In this case \cite[see][p.111]{Diaconis:1988:PartialExchang}, de Finetti's theorem asserts the existence of a unique measure $\mu$ such that, for every $n \in \bbN$,
-		\begin{equation*}
-			\bbP \{ X_1 = x_1, ..., X_n = x_n \} = \int \mu(dp) \, p^s (1-p)^{n-s},
-		\end{equation*}
-		where $s = \sum_{i=1}^n x_i$ is the number of 1's in the sequence $x_1, ..., x_n$. In other words, there exists a random variable $p$ in the unit interval with distribution $\mu$ such that, given $p$, $X_1, ..., X_n$ are i.i.d. Bernoulli random variables with parameter $p$.
-	\end{example}
-\end{mdframed}
+\section{Beyond exchangeability} \label{section:exchangeability}
 
 
 
-Technicalities aside, Theorem \ref{thm:definetti} intuitively tells us that, conditional on an unknown distribution $F$ (which is always guaranteed to exist), any subsequence of an exchangeable process can be thought of as a random sample with distribution $F$. This measure plays the role of an infinite-dimensional parameter \cite[][Ch.~4.3]{BernardoSmith:1994:BayesianTheory}. Furthermore, $F$ has a unique prior distribution $\mu$, which justifies the use of a Bayesian approach in settings with exchangeable data. \\
 
+There are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$. It is clear that $(X_n)$ is not an exchangeable sequence, and so de Finetti's representation theorem cannot be immediatly used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
 
-However, there are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$; namely, the setting for dependence analysis. It is clear that $(X_n)$ is not an exchangeable sequence, and so de Finetti's representation theorem cannot be immediatly used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
 
 
 \subsection{Partial exchangeability}
@@ -94,7 +47,7 @@ We now state the representation theorem for general partially exchangeable seque
 
 
 \begin{theorem} \label{thm:definetti_partial}
-	$\left\{ (X_{t_i, \, n})_{n=1}^{\infty} \, : \, i=1, ..., d \right\}$ is a partially exchangeable sequence if and only if there exists a unique probability measure $\mu$ on $\calP^d$ such that, for all $n_1, ..., n_d \in \bbN$ and $A_1, ..., A_d \in \calB(\calX)^{n_i}$,
+	$\left\{ (X_{t_i, \, n})_{n=1}^{\infty} \, : \, i=1, ..., d \right\}$ is a partially exchangeable sequence if and only if there exists a unique probability measure $\mu$ on $\calP^d$ such that, for all $n_1, ..., n_d \in \bbN$ and $A_1, ..., A_d \in \calB^{n_i}$,
 	\begin{equation} \label{eq:definetti_partial_thm}
 		\bbP \left\{ (X_{t_i, \, k})_{k=1}^{n_i} \in A_i \, : \, i=1, ..., d  \right\} = \int_{\calP^d}  \prod_{i=1}^d F_i(A_i) \, \mu(dF_1, ..., dF_d).
 	\end{equation}

@@ -2,7 +2,73 @@
 
 % Background section
 
-\section{Background}
+\section{Introduction}
+
+
+A sequence of random variables taking values in a standard measurable space $(\calX, \calB)$ is said to be exchangeable if the distribution of any finite subsequence of it is invariant under permutations. Formally:
+
+\begin{definition}[Exchangeability] \label{def:exchangeability}
+	The random variables $X_1, X_2, ..., X_n$ are said to be finitely exchangeable if
+	\begin{equation*}
+		(X_1, ..., X_n) \equdist (X_{\pi(1)}, ..., X_{\pi(n)})
+	\end{equation*}
+	for any permutation $\pi$ of $\bbN_n :=\{1, ..., n \}$.\footnote{For the sake of completeness, a permutation $\pi$ of a set $\calH$ is simply a bijection in $\calH$.} A countable sequence $(X_n)_{n=1}^{\infty}$ of random variables is said to be exchangeable if every finite subsequence of it is finitely exchangeable.
+\end{definition}
+
+%The notion of exchangeability captures a sense of homogeneity in the population, but it is a weaker assumption than independence and identical distribution, as we show in the following example.
+
+%\begin{mdframed}[backgroundcolor=mygray] 
+%	\begin{example} \label{ex:iid_exch}
+%		Let $X_1, X_2, ...$ be i.i.d. random variables with common distribution $\mu$. For $n \in \bbN$ consider (without loss of generality) the subsequence $X = (X_1, ..., X_n)$. Then the joint distribution $\mu_n$ of $X$ is, due to independence, the $n$-product of $\mu$: $\mu_n = \mu \times \mu \times \cdots \times \mu$. For any permutation $\pi$ of $\bbN_n$ it is possible to trivially rearrange the products, and so clearly $X \equdist (X_{\pi(1)}, ..., X_{\pi(n)})$. Hence, any i.i.d. sequence is exchangeable.
+%	\end{example}
+%\end{mdframed}
+
+
+
+This seemingly innocent definition, which captures a sense of homogeneity in the population, has a very profound consequence: de Finetti's representation theorem, which has been proved in increasing generality \cite{deFinetti:1930:RepTheorem, HewittSavage:1955:rep_theorem, DiaconisFreedman:1978:Generalizations} and we now state for reference.
+
+\begin{theorem}[de Finneti] \label{thm:definetti}
+	$(X_n)_{n=1}^{\infty}$ is an exchangeable sequence of random variables if and only if there exists a unique probability measure $\mu$ on $\calP$---the set of all probability measures on $(\calX, \calB)$---such that
+	\begin{equation} \label{eq:definetti_thm}
+		\bbP \{ X_1 \in A_1, ..., X_n \in A_n \} = \int_{\calP}  \prod_{i=1}^n F(A_i) \, \mu(dF)
+	\end{equation} 
+	for every $n \in \bbN$ and $A_1, ..., A_n \in \calB$.\footnote{Observe that the integral in Equation (\ref{eq:definetti_thm}) is over a set of functions---namely, the set of probability measures on $(\calX, \calB)$.}
+\end{theorem}
+
+
+
+
+Technicalities aside, Theorem \ref{thm:definetti} intuitively tells us that, conditional on an unknown distribution $F$---which is always guaranteed to exist---any subsequence of an exchangeable process can be thought of as a random sample with common distribution $F$. This distribution plays the role of an infinite-dimensional parameter \cite[][Ch.~4.3]{BernardoSmith:1994:BayesianTheory}. Furthermore, $F$ has a unique prior distribution $\mu$, which justifies the use of a Bayesian approach in settings with exchangeable data.
+
+
+\begin{mdframed}[backgroundcolor=mygray] 
+	\begin{example} \label{ex:binary_definetti}
+		Let $X = X_1, X_2, ...$ be an exchangeable sequence of binary random variables, that is, $\calX = \{0, 1\}$. In this case \cite[see][p.111]{Diaconis:1988:PartialExchang}, de Finetti's theorem asserts the existence of a unique measure $\mu$ such that, for every $n \in \bbN$,
+		\begin{equation*}
+			\bbP \{ X_1 = x_1, ..., X_n = x_n \} = \int \mu(dp) \, p^s (1-p)^{n-s},
+		\end{equation*}
+		where $s = \sum_{i=1}^n x_i$ is the number of 1's in the sequence $x_1, ..., x_n$. In other words, there exists a random variable $p$ in the unit interval with distribution $\mu$ such that, given $p$, $X_1, ..., X_n$ are i.i.d. Bernoulli random variables with parameter $p$.
+	\end{example}
+\end{mdframed}
+
+
+
+
+
+
+
+
+In many practical situations, however, one is interested in studying not a single isolated sequence of random variables, but its relationship---and dependence---on a sequence of covariates. It may at first sight seem that exchangeability has no role to play in statistical models for dependence, but we argue that this is not so. Multiple generalizations of the notion of exchangeability, some of which are satisfied in this dependence modeling setting, have been proposed since at least 1938 \cite{deFinetti:1938:partial_exch}. For example, \cite{Aldous:2010, Orbanz:Roy:2015} expand exchangeability for a wide variety of random arrays and graphs; \cite{Bernardo:1996:Exch, CamerlenghiEtAl:2019:partial_exchang_hierarchical} discuss it in a hierarchical modeling setting; and \cite{Diaconis:1988:PartialExchang} reviews its uses in Markov Chains. Furthermore, de Finetti-like representation theorems exist for some of these notions of exchangeability. 
+\\
+
+
+In this work we are interested in studying the role that exchangeability can play in dependence modelling, that is, when the distribution of the variables of interest depends on a set of covariates. Special emphasis is given to Gaussian process regression models \cite{RasmussenWilliams:2006}, an area that has seen a surge in popularity over the last couple of years, especially in the modelling of complex phenomena, statistical emulation, and Bayesian optimization.
+\\
+
+
+For this purpose we first define, in Section \ref{section:exchangeability}, three extensions of the notion of exchangeability that are of use in dependence modelling: partial exchangeability \cite{deFinetti:1938:partial_exch}, local exchangeability \cite{CampbellEtAl:2019:LocalExch}, and regression exchangeability \cite{McCullagh:2005:ExchAndReg}. de Finetti-like representation theorems are stated whenever available, and their benefits and disadvantages are discussed. In Section \ref{section:GPs} we then give a brief overview of Gaussian process regression, and study it in the context of exchangeability. We conclude in Section \ref{section:discussion} with a brief discussion and possible future research directions.
+
+
 
 
 

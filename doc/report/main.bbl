@@ -60,7 +60,6 @@
       \field{series}{London Mathematical Society Lecture Note Series}
       \field{title}{More uses of exchangeability: representations of complex random structures}
       \field{year}{2010}
-      \true{nocite}
       \field{pages}{35\bibrangedash 63}
       \range{pages}{29}
     \endentry
@@ -87,7 +86,6 @@
       \field{title}{The concept of exchangeability and its applications}
       \field{volume}{4}
       \field{year}{1996}
-      \true{nocite}
       \field{pages}{111\bibrangedash 122}
       \range{pages}{12}
     \endentry
@@ -355,7 +353,6 @@
       \field{journaltitle}{arXiv e-prints}
       \field{title}{{A Tutorial on Bayesian Optimization}}
       \field{year}{2018}
-      \true{nocite}
       \field{pages}{arXiv:1807.02811}
       \range{pages}{-1}
       \verb{eprint}
@@ -393,33 +390,6 @@
       \field{year}{1955}
       \field{pages}{470\bibrangedash 501}
       \range{pages}{32}
-    \endentry
-    \entry{Kallenberg:2002}{book}{}
-      \name{author}{1}{}{%
-        {{hash=f6bb1091b9da51c1ac66f8a4a75fcba9}{%
-           family={Kallenberg},
-           familyi={K\bibinitperiod},
-           given={Olav},
-           giveni={O\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer-Verlag New York}%
-      }
-      \strng{namehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
-      \strng{fullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
-      \strng{bibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
-      \strng{authorbibnamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
-      \strng{authornamehash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
-      \strng{authorfullhash}{f6bb1091b9da51c1ac66f8a4a75fcba9}
-      \field{labelalpha}{Kal02}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2nd}
-      \field{title}{Foundations of Modern Probability}
-      \field{year}{2002}
-      \true{nocite}
     \endentry
     \entry{Kingman:1978}{article}{}
       \name{author}{1}{}{%
@@ -518,7 +488,6 @@
       \field{title}{Bayesian Models of Graphs, Arrays and Other Exchangeable Random Structures}
       \field{volume}{37}
       \field{year}{2015}
-      \true{nocite}
       \field{pages}{437\bibrangedash 461}
       \range{pages}{25}
     \endentry
@@ -551,7 +520,6 @@
       \field{title}{Gaussian process emulators for spatial individual-level models of infectious disease}
       \field{volume}{44}
       \field{year}{2016}
-      \true{nocite}
       \field{pages}{480\bibrangedash 501}
       \range{pages}{22}
     \endentry
@@ -585,6 +553,48 @@
       \field{edition}{1}
       \field{title}{Gaussian Processes for Machine Learning}
       \field{year}{2006}
+    \endentry
+    \entry{SacksEtAl:1989:CompExp}{article}{}
+      \name{author}{4}{}{%
+        {{hash=85877ac80e3df5401239ba28ad5be7a4}{%
+           family={Sacks},
+           familyi={S\bibinitperiod},
+           given={Jerome},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a4211be20cdaf03957cecf6c76075df9}{%
+           family={Welch},
+           familyi={W\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8e7e04c6c3162baaaa46fca475ce84e9}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Toby},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8891f29f99ab884e255006182fc03913}{%
+           family={Wynn},
+           familyi={W\bibinitperiod},
+           given={Henry},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc5c6e3fe8c53c333f8bcabe5af5f3fa}
+      \strng{fullhash}{8c95fee64eda1cba07da15d8d23f6a11}
+      \strng{bibnamehash}{fc5c6e3fe8c53c333f8bcabe5af5f3fa}
+      \strng{authorbibnamehash}{fc5c6e3fe8c53c333f8bcabe5af5f3fa}
+      \strng{authornamehash}{fc5c6e3fe8c53c333f8bcabe5af5f3fa}
+      \strng{authorfullhash}{8c95fee64eda1cba07da15d8d23f6a11}
+      \field{labelalpha}{Sac+89}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistical Science}
+      \field{number}{4}
+      \field{title}{Design and Analysis of Computer Experiments}
+      \field{volume}{4}
+      \field{year}{1989}
+      \field{pages}{409\bibrangedash 435}
+      \range{pages}{27}
     \endentry
     \entry{Schervish:1995}{book}{}
       \name{author}{1}{}{%
@@ -651,7 +661,6 @@
       \field{title}{{Bayesian design of experiments for generalized linear models and dimensional analysis with industrial and scientific application}}
       \field{volume}{29}
       \field{year}{2017}
-      \true{nocite}
       \field{pages}{91\bibrangedash 103}
       \range{pages}{13}
     \endentry
