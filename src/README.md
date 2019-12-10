@@ -1,1 +1,1 @@
-code goes here
+R code developed for the project goes here, essentially only to produce Figure 1. To run, preferably open the Rproj file in RStudio and make sure to install `tidyverse` and `ggplot2` packages beforehand.
