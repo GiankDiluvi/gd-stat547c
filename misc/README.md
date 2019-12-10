@@ -1,1 +1,1 @@
-miscellaneous goes here
+Essentially contains papers I used for the project.
