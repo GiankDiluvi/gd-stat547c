@@ -1,7 +1,7 @@
 # Exchangeability in Dependence Modelling
-Author: Gian Carlo Di-Luvi
-STAT 547C final project
-UBC Statistics
+Author: Gian Carlo Di-Luvi \
+STAT 547C final project \
+UBC Statistics \
 Github template adapted from Dr. Ben Bloem-Reddy
 
 ## Abstract
