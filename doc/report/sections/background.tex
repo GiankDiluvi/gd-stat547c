@@ -8,7 +8,7 @@
 A sequence of random variables taking values in a standard measurable space $(\calX, \calB)$ is said to be exchangeable if the distribution of any finite subsequence of it is invariant under permutations. Formally:
 
 \begin{definition}[Exchangeability] \label{def:exchangeability}
-	The random variables $X_1, X_2, ..., X_n$ are said to be finitely exchangeable if
+	The random variables $X_1, ..., X_n$ are said to be finitely exchangeable if
 	\begin{equation*}
 		(X_1, ..., X_n) \equdist (X_{\pi(1)}, ..., X_{\pi(n)})
 	\end{equation*}
@@ -25,7 +25,7 @@ A sequence of random variables taking values in a standard measurable space $(\c
 
 
 
-This seemingly innocent definition, which captures a sense of homogeneity in the population, has a very profound consequence: de Finetti's representation theorem, which has been proved in increasing generality \cite{deFinetti:1930:RepTheorem, HewittSavage:1955:rep_theorem, DiaconisFreedman:1978:Generalizations} and we now state for reference.
+This seemingly innocent definition captures a sense of homogeneity in the process and has a very profound consequence---namely, de Finetti's representation theorem, which has been proved in increasing generality \cite{deFinetti:1930:RepTheorem, HewittSavage:1955:rep_theorem, DiaconisFreedman:1978:Generalizations} and we now state for reference.
 
 \begin{theorem}[de Finneti] \label{thm:definetti}
 	$(X_n)_{n=1}^{\infty}$ is an exchangeable sequence of random variables if and only if there exists a unique probability measure $\mu$ on $\calP$---the set of all probability measures on $(\calX, \calB)$---such that
@@ -43,7 +43,7 @@ Technicalities aside, Theorem \ref{thm:definetti} intuitively tells us that, con
 
 \begin{mdframed}[backgroundcolor=mygray] 
 	\begin{example} \label{ex:binary_definetti}
-		Let $X = X_1, X_2, ...$ be an exchangeable sequence of binary random variables, that is, $\calX = \{0, 1\}$. In this case \cite[see][p.111]{Diaconis:1988:PartialExchang}, de Finetti's theorem asserts the existence of a unique measure $\mu$ such that, for every $n \in \bbN$,
+		Let $X = X_1, X_2, ...$ be an exchangeable sequence of binary random variables, that is, $\calX = \{0, 1\}$. In this case \cite[see][p.111]{Diaconis:1988:PartialExchang}, de Finetti's theorem asserts the existence of a unique measure $\mu$ such that, for every $n \in \bbN$ and $x_1, ..., x_n \in \calX$,
 		\begin{equation*}
 			\bbP \{ X_1 = x_1, ..., X_n = x_n \} = \int \mu(dp) \, p^s (1-p)^{n-s},
 		\end{equation*}
@@ -58,7 +58,7 @@ Technicalities aside, Theorem \ref{thm:definetti} intuitively tells us that, con
 
 
 
-In many practical situations, however, one is interested in studying not a single isolated sequence of random variables, but its relationship---and dependence---on a sequence of covariates. It may at first sight seem that exchangeability has no role to play in statistical models for dependence, but we argue that this is not so. Multiple generalizations of the notion of exchangeability, some of which are satisfied in this dependence modeling setting, have been proposed since at least 1938 \cite{deFinetti:1938:partial_exch}. For example, \cite{Aldous:2010, Orbanz:Roy:2015} expand exchangeability for a wide variety of random arrays and graphs; \cite{Bernardo:1996:Exch, CamerlenghiEtAl:2019:partial_exchang_hierarchical} discuss it in a hierarchical modeling setting; and \cite{Diaconis:1988:PartialExchang} reviews its uses in Markov Chains. Furthermore, de Finetti-like representation theorems exist for some of these notions of exchangeability. 
+In many practical situations, however, one is interested in studying not a single isolated sequence of random variables, but its relationship---and dependence---with a sequence of covariates. It may at first sight seem that exchangeability has no role to play in statistical models for dependence, but we argue that this is not so. Multiple generalizations of the notion of exchangeability, some of which are satisfied in this dependence modeling setting, have been proposed since at least 1938 \cite{deFinetti:1938:partial_exch}. For example, \cite{Aldous:2010, Orbanz:Roy:2015} expand exchangeability for a wide variety of random arrays and graphs; \cite{Bernardo:1996:Exch, CamerlenghiEtAl:2019:partial_exchang_hierarchical} discuss it in a hierarchical modeling setting; and \cite{Diaconis:1988:PartialExchang} reviews its uses in Markov Chains. Furthermore, de Finetti-like representation theorems exist for some of these notions of exchangeability. 
 \\
 
 
@@ -66,7 +66,7 @@ In this work we are interested in studying the role that exchangeability can pla
 \\
 
 
-For this purpose we first define, in Section \ref{section:exchangeability}, three extensions of the notion of exchangeability that are of use in dependence modelling: partial exchangeability \cite{deFinetti:1938:partial_exch}, local exchangeability \cite{CampbellEtAl:2019:LocalExch}, and regression exchangeability \cite{McCullagh:2005:ExchAndReg}. de Finetti-like representation theorems are stated whenever available, and their benefits and disadvantages are discussed. In Section \ref{section:GPs} we then give a brief overview of Gaussian process regression, and study it in the context of exchangeability. We conclude in Section \ref{section:discussion} with a brief discussion and possible future research directions.
+For this purpose we first define, in Section \ref{section:exchangeability}, three extensions of the notion of exchangeability that are of use in dependence modelling: partial exchangeability \cite{deFinetti:1938:partial_exch}, local exchangeability \cite{CampbellEtAl:2019:LocalExch}, and regression exchangeability \cite{McCullagh:2005:ExchAndReg}. Their benefits and disadvantages are discussed and de Finetti-like representation theorems are stated whenever available. In Section \ref{section:GPs} we then give a brief overview of Gaussian process regression, and study it in the context of exchangeability. We conclude in Section \ref{section:discussion} with a brief discussion and possible future research directions.
 
 
 

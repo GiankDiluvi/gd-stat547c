@@ -7,7 +7,7 @@
 
 
 
-There are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$. It is clear that $(X_n)$ is not an exchangeable sequence, and so de Finetti's representation theorem cannot be immediately used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
+There are very general settings where even exchangeability is too strong an assumption. Consider the case of a sequence $(X_n)$ of random variables endowed with covariates $(t_n)$, and such that the distribution of each $X_i$ depends on $t_i$. In general $(X_n)$ will not be an exchangeable sequence, and so de Finetti's representation theorem cannot be immediately used. Some more general notions of exchangeability to overcome this difficulty have been proposed.
 
 
 
@@ -65,7 +65,7 @@ Finally, observe that partial exchangeability requires access to so-called repli
 \subsection{Local exchangeability}
 
 
-Campbell et al. \cite{CampbellEtAl:2019:LocalExch} propose the notion of \textit{local exchangeability} for data with covariates. Both exchangeability and partial exchangeability require some sort of strict invariance under permutations. In this case this is relaxed to allow for some distributional variation under permutations, so long as this variation is bounded and proportional to how close the corresponding covariates are. Interestingly, a representation theorem can still be obtained in such a scenario. Before formalizing these ideas, we define a way to measure variation between distributions.
+Campbell et al. \cite{CampbellEtAl:2019:LocalExch} propose the notion of \textit{local exchangeability} for data with covariates. Both exchangeability and partial exchangeability require some sort of strict invariance under permutations. In this case this is relaxed to allow for some distributional variation under permutations, so long as this variation is bounded and proportional to how close the corresponding covariates are. Remarkably, a representation theorem can still be obtained in such a scenario. Before formalizing these ideas, we define a way to measure variation between distributions.
 
 
 \begin{definition}[Total variation distance]
@@ -122,7 +122,7 @@ McCullagh \cite{McCullagh:2005:ExchAndReg} proposed yet another notion of exchan
 \end{definition}
 
 
-Condition \ref{cond:reg_exch_1} in Definition \ref{def:regression_exchangeability} simply ensures compatibility with respect to subsampling from $X$, and in the context of Gaussian process regression it is known as the \textit{marginalization} property \cite[][p.~13]{RasmussenWilliams:2006}. Condition \ref{cond:reg_exch_2} may seem trivial, but observe that $X_{T_1}$ and $X_{T_2}$ may very well be different. However, so long as their covariates are the same, any distinction between the actual values within $X_{T_1}$ and $X_{T_2}$ has no effect on their distribution. We showcase this with an example.
+Condition \ref{cond:reg_exch_1} in Definition \ref{def:regression_exchangeability} simply ensures compatibility with respect to subsampling from $X$. Condition \ref{cond:reg_exch_2} may seem trivial, but observe that $X_{T_1}$ and $X_{T_2}$ may very well be different. However, so long as their covariates are the same, any distinction between the actual values within $X_{T_1}$ and $X_{T_2}$ has no effect on their distribution. We showcase this with an example.
 
 
 
@@ -133,7 +133,7 @@ Condition \ref{cond:reg_exch_1} in Definition \ref{def:regression_exchangeabilit
 \end{mdframed}
 
 
-Example \ref{ex:reg_exch_1} works well due to the availability of replicates. However, unlike partial exchangeability (Example \ref{ex:binary_definetti}), a process may not have replicates at all and still be regression exchangeable, whereas it would not be partially so. However, it is worth noting that Condition \ref{cond:reg_exch_2} in Definition \ref{def:regression_exchangeability} does reduce to a triviality in such a setting: the only way $T_1 = T_2$ would be if $X_{T_1} = X_{T_2}$ exactly. \\
+Example \ref{ex:reg_exch_1} works well due to the availability of replicates. However, unlike partial exchangeability, a process may not have replicates at all and still be regression exchangeable, whereas it would not be partially so. However, it is worth noting that Condition \ref{cond:reg_exch_2} in Definition \ref{def:regression_exchangeability} does reduce to a triviality in such a setting: the only way $T_1 = T_2$ would be if $X_{T_1} = X_{T_2}$ exactly. \\
 
 To the best of our knowledge, there is no de Finetti-like representation theorem available for regression exchangeability.
 

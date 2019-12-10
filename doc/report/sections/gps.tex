@@ -5,7 +5,7 @@
 \section{Gaussian process regression} \label{section:GPs}
 
 
-Consider a sequence of random variables $X = (X_t)_{t \in \calT}$ endowed with covariates in the space $\calT$ and consider a finite subset $X_T$, $T \subset \calT$ of them. Suppose we are interested in studying $X_{t^{*}}$ for $t^{*} \notin T$, given $X_T$. A natural estimator would be $\bbE [X_{t^{*}} \, | \, \sigma X_T ]$, which of course depends on the distributional and dependence structures of the process $X$. If $X$ is a Gaussian process, which we define below, this expression can be easily computed and the methodology just discusses is called Gaussian process regression. This method has gained popularity in the last years as a reliable way of modelling complex phenomena, such as computer experiments \cite{SacksEtAl:1989:CompExp} and disease spreading modeling \cite{PokharelDeardon:2016:GPInfectDisease}, and for doing Bayesian optimization \cite{Frazier:2018:BayesOptTutorial} and statistical emulation \cite{WoodsEtAl:2017:ACEAlgorithm}.
+Consider a sequence of random variables $X = (X_t)_{t \in \calT}$ endowed with covariates in the space $\calT$ and a finite subset $X_T$, $T \subset \calT$ of them. Suppose we are interested in studying $X_{t^{*}}$ for $t^{*} \notin T$, given $X_T$. A natural estimator would be $\bbE [X_{t^{*}} \, | \, \sigma X_T ]$, which of course depends on the distributional and dependence structures of the process $X$. If $X$ is a Gaussian process, which we define below, this expression can be easily computed and the methodology just discusses is called Gaussian process regression. This method has gained popularity in the last years as a reliable way of modelling complex phenomena, such as computer experiments \cite{SacksEtAl:1989:CompExp} and disease spreading \cite{PokharelDeardon:2016:GPInfectDisease}, and for doing Bayesian optimization \cite{Frazier:2018:BayesOptTutorial} and statistical emulation \cite{WoodsEtAl:2017:ACEAlgorithm}.
 
 
 
@@ -69,7 +69,7 @@ The resulting conditional distribution for a new covariate value $t^{*}$ given $
 \subsection{Exchangeability of Gaussian processes}
 
 
-We now study exchangeability in the context of Gaussian process regression. Let $X = (X_t)_{t \in \calT} \sim \GP (0, \kappa)$. The process $X$ is said to be noise-free if Equation (\ref{eq:GP_noise_free}) holds and $\sigma$-noisy if Equation (\ref{eq:GP_noise}) holds for any finite subset $T \subset \calT$. We enforce the distinction because it has much of influence on whether a process is exchangeable or not. Lastly, we also assume that $\kappa$ is given by Equation (\ref{eq:sq_exp_cov}), possibly with a modification to account for noisy observations if necessary, and that $\calT \subset \bbR$.
+Let $X = (X_t)_{t \in \calT} \sim \GP (0, \kappa)$. The process $X$ is said to be noise-free if Equation (\ref{eq:GP_noise_free}) holds and $\sigma$-noisy if Equation (\ref{eq:GP_noise}) holds for any finite subset $T \subset \calT$. We enforce the distinction because it has much influence on whether a process is exchangeable or not. Lastly, we also assume that $\kappa$ is given by Equation (\ref{eq:sq_exp_cov}), possibly with a modification to account for noisy observations if necessary, and that $\calT \subset \bbR$.
 
 
 
@@ -77,7 +77,7 @@ We now study exchangeability in the context of Gaussian process regression. Let 
 	Let $X = (X_t)_{t \in \calT} \sim \GP (0, \kappa)$. Then $X$ is not exchangeable.
 \end{proposition}
 
-\textbf{Proof. \hspace{0.05cm}} Conceptually this is trivially true, and is due to the fact that the covariance function $\kappa$---which completely determines the process---is sensible to the distance between covariates. The order of the covariates matters, and so the sequence cannot be exchangeable. Formally, let $T = \{ t_1, t_2, t_3 \}$ with $t_2 = t_1 + 1, t_3 = t_1 + 2$ and $\pi$ be a permutation of $T$ such that $\pi(t_1) = t_2$,  $\pi(t_2) = t_1$, and $\pi(t_3) = t_3$. Then $X_T = \calN (0, K(T, T))$ and $X_{\pi T} = \calN(0, K(\pi T, \pi T)$. If $X$ were exchangeable, then $X_T \equdist X_{\pi T}$, and particularly $\kappa(t_1, t_3) = \kappa(t_2, t_3)$, which is clearly not the case because $\kappa(t_1, t_3) = e^{-1}$ but $\kappa(t_2, t_3) = e^{-1/2}$, regardless of whether the process is noisy or not.
+\textbf{Proof. \hspace{0.05cm}} Conceptually this is trivially true, and is due to the fact that the covariance function $\kappa$---which completely determines the process---is sensible to the distance between covariates. The order of the covariates matters, and so the sequence cannot be exchangeable. Formally, let $T = \{ t_1, t_2, t_3 \}$ with $t_2 = t_1 + 1, t_3 = t_1 + 2$ and $\pi$ be a permutation of $T$ such that $\pi(t_1) = t_2$,  $\pi(t_2) = t_1$, and $\pi(t_3) = t_3$. Then $X_T = \calN (0, K(T, T))$ and $X_{\pi T} = \calN(0, K(\pi T, \pi T))$---possibly with an additional term if the process is noisy. If $X$ were exchangeable, then $X_T \equdist X_{\pi T}$, and particularly $\kappa(t_1, t_3) = \kappa(t_2, t_3)$, which is clearly not the case because $\kappa(t_1, t_3) = e^{-1}$ but $\kappa(t_2, t_3) = e^{-1/2}$, regardless of whether the process is noisy or not.
 
 \qed
 
