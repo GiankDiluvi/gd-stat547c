@@ -5,7 +5,7 @@
 \section{Gaussian process regression} \label{section:GPs}
 
 
-Consider a sequence of random variables $X = (X_t)_{t \in \calT}$ endowed with covariates in the space $\calT$ and a finite subset $X_T$, $T \subset \calT$ of them. Suppose we are interested in studying $X_{t^{*}}$ for $t^{*} \notin T$, given $X_T$. A natural estimator would be $\bbE [X_{t^{*}} \, | \, \sigma X_T ]$, which of course depends on the distributional and dependence structures of the process $X$. If $X$ is a Gaussian process, which we define below, this expression can be easily computed and the methodology just discusses is called Gaussian process regression. This method has gained popularity in the last years as a reliable way of modelling complex phenomena, such as computer experiments \cite{SacksEtAl:1989:CompExp} and disease spreading \cite{PokharelDeardon:2016:GPInfectDisease}, and for doing Bayesian optimization \cite{Frazier:2018:BayesOptTutorial} and statistical emulation \cite{WoodsEtAl:2017:ACEAlgorithm}.
+Consider a sequence of random variables $X = (X_t)_{t \in \calT}$ endowed with covariates in the space $\calT$ and a finite subset $X_T$, $T \subset \calT$ of them. Suppose we are interested in studying $X_{t^{*}}$ for $t^{*} \notin T$, given $X_T$. A natural estimator would be $\bbE [X_{t^{*}} \, | \, \sigma X_T ]$, which of course depends on the distributional and dependence structures of the process $X$. If $X$ is a Gaussian process, which we define below, this expression can be easily computed and the methodology just discussed is called Gaussian process regression. This method has gained popularity in the last years as a reliable way of modelling complex phenomena, such as computer experiments \cite{SacksEtAl:1989:CompExp} and disease spreading \cite{PokharelDeardon:2016:GPInfectDisease}, and for doing Bayesian optimization \cite{Frazier:2018:BayesOptTutorial} and statistical emulation \cite{WoodsEtAl:2017:ACEAlgorithm}.
 
 
 
@@ -21,7 +21,7 @@ Consider a sequence of random variables $X = (X_t)_{t \in \calT}$ endowed with c
 
 
 
-In practice, GP regression commonly arises when studying functions which are computationally expensive to evaluate. The general idea is to assume that the function of interest $f$ is a GP and use a sample of values of $f$ to estimate the function in unobserved values of the domain. Formally, consider a function $f: \calT \to \bbR$ and denote $X_t := f(t)$ for all $t \in \calT$. We assume that $X = (X_t) \sim \GP (m, \kappa)$. Usually, $\calT$ will be a subset of $\bbR^n$, $m = 0$ and we will have access to observations $(X_t, t)_{t \in T}$, where $T$ is a finite subset of $\calT$. If this is the case,
+In practice, GP regression commonly arises when studying functions which are computationally expensive to evaluate. The general idea is to assume that the function of interest $f$ is a GP and use a sample of values of $f$ to estimate the function in unobserved values of the domain. Formally, consider a function $f: \calT \to \bbR$ and denote $X_t := f(t)$ for all $t \in \calT$. We assume that $X = (X_t) \sim \GP (m, \kappa)$. Usually, $\calT$ will be a subset of $\bbR^n$, $m = 0$, and we will have access to observations $(X_t, t)_{t \in T}$, where $T$ is a finite subset of $\calT$. If this is the case,
 \begin{equation} \label{eq:GP_noise_free}
 	X_T \equdist \calN (0, K(T, T)),
 \end{equation}
@@ -112,7 +112,7 @@ A good question is whether a noise-free GP is partially exchangeable. We argue t
 
 
 
-In preparation for the main local-exchangeability results for GP regression, we state a sufficiency condition for determining local exchangeability of a sequence. For a proof, see \cite[][Proposition 3]{CampbellEtAl:2019:LocalExch}.
+In preparation for the main local exchangeability results for GP regression, we state a sufficiency condition for determining local exchangeability of a sequence. For a proof, see \cite[][Proposition 3]{CampbellEtAl:2019:LocalExch}.
 
 \begin{proposition} \label{prop:sufficient_local_exchangeability}
 	Consider a process $(X_t)_{t \in \calT}$ and suppose there exists a $\sigma$-algebra $\calG$ such that, for any finite subset $T \subset \calT$ of covariates, the components of $X_T$ are conditionally independent given $\calG$. Let $G_t = \bbP [X_t \, | \, \calG ]$. Then $X$ is $f$-locally exchangeable if, for all pairs $t, t' \in \calT$,
